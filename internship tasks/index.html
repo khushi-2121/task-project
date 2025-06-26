@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Schedule Meetings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="stylesheet.css"/>
+</head>
+<body>
+  <header>
+    <div class="header">
+       <div class="header-left"><img src="Group 5.1 (1).jpg" alt="Logo">brix<span>templates</span></div>
+      <div class="header-right"><button>Clone Now</button></div>
+    </div>
+  </header>
+
+  <hr class="line">
+
+  <section>
+    <div class="main">
+      <div class="main-left">
+        <p>- All in One Meeting Scheduler</p>
+        <h1>Schedule meetings effortlessly</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor posuere vel venenatis eu sit massa volutpat.</p>
+        <div class="buttons">
+          <div class="button-1">Get Started</div>
+          <div class="button-2">Learn More</div>
+        </div>
+        <hr>
+        <p class="trust-text">Trusted by teams around the world</p>
+        <div class="img">
+          <img src="google.jpg" alt="Google">
+          <img src="facebook.jpg" alt="Facebook">
+          <img src="youtube.jpg" alt="YouTube">
+          <img src="pinterest.jpg" alt="Pinterest">
+        </div>
+      </div>
+      <div class="main-right">
+        <img  class="imag-1" src="Rectangle 4453.jpg" alt="Background Shape">
+        <img class="imag-2" src="img.jpg" alt="Main">
+      </div>
+    </div>
+  </section>
+
+  
+
+  <footer>
+    <div class="footer">
+        <input type="text" id="email" placeholder="Enter your email">
+        <button id="subscribe">Subscribe</button>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('subscribe').addEventListener('click', function() {
+      const email = document.getElementById('email').value;
+      if (email.trim() === '') {
+        alert('Please enter your email!');
+      } else {
+        alert('Subscribed successfully with: ' + email);
+        document.getElementById('email').value = '';
+      }
+    });
+  </script>
+</body>
+</html>
